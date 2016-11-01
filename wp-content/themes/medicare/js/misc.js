@@ -112,10 +112,10 @@ window.bt_loaded = false;
 		window.bt_theme_loaded = true;
 		
 		// remove preloader
-		$( '#btPreloader' ).addClass( 'removePreloader' );
+		//$( '#btPreloader' ).addClass( 'removePreloader' );
 		
 		// trigger custom load event
-		setTimeout( function() { $( window ).trigger( 'btload' ); window.bt_loaded = true; }, 1000 );
+		//setTimeout( function() { $( window ).trigger( 'btload' ); window.bt_loaded = true; }, 1000 );
 		
 	});
 	
@@ -216,11 +216,11 @@ window.bt_loaded = false;
 				if ( href !== undefined ) {
 					if ( location.href.split('#')[0] != href.split('#')[0] && ! href.startsWith( '#' ) && ! href.startsWith( 'mailto' )  ) {
 						if ( $( this ).attr( 'target' ) != '_blank' && ! href.endsWith( '#respond' )) {
-							if ( $( '#btPreloader' ).length ) {
+							/*if ( $( '#btPreloader' ).length ) {
 								$( '#btPreloader' ).removeClass( 'removePreloader' );
-								setTimeout( function() { window.location = href }, 1500 );
+								setTimeout( function() { window.location = href }, 10 );
 								return false;
-							}
+							}*/
 						}
 					} else if ( href != "#" ) {
 						if( $(this).parent().parent().attr('class') != 'tabsHeader' ) scrollPageToId( href );
