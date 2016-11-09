@@ -290,7 +290,7 @@
 
 .wBackground {
     background-color: transparent;
-    background-position: center;
+    background-position: 0% 80%;
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
@@ -351,4 +351,8 @@
 	body:not(.btHalfPage) .rowItem:nth-child(#(i)) {
 		transition-delay: math(#(i)*200, ms);
 	}
+}
+
+body:not(.btHalfPage) .rowItem:nth-child(2){
+	left: 11%;
 }

@@ -929,7 +929,7 @@ input {
     }
 .wBackground {
     background-color: transparent;
-    background-position: center;
+    background-position: 100% 80%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     }
@@ -1098,6 +1098,7 @@ h6 {
     line-height: 1.5;
     padding: 0;
     }
+
 h1,
 h2,
 h3 {
@@ -1676,7 +1677,7 @@ body.btMenuVertical .menuPort nav > ul > li.menu-item-has-children > a:before {
     float: left;
     }
 .menuHolder .logo img {
-    height: 55px;
+    height: 65px;
     width: auto;
     display: block;
     }
@@ -18230,6 +18231,10 @@ img.btAltLogo {
     color: #000 !important;
     opacity: 1;
     }
+}
+
+.orange h1{
+    color: #FFA500 !important;
 }
 
 /*# sourceMappingURL=style.crush.css.map */
