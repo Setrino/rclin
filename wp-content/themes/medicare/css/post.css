@@ -581,6 +581,10 @@ form.wpcf7-form {
 		border-radius: 0;
 	}
 
+	.fancy-select .trigger{
+		line-height: 2.9;
+	}
+
 	input[type="text"]:focus, input[type="password"]:focus,
 	input[type="email"]:focus, input[type="date"]:focus, textarea:focus, .fancy-select .trigger.open {
 		box-shadow: 0 0 0 2px $(accentColor) inset;

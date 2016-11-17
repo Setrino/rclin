@@ -323,6 +323,11 @@ window.bt_loaded = false;
 			$(this).parent().toggleClass('closed');
 		});
 
+				//Screen size
+		if($( window ).height() <= 820){
+			$('.btGoogleMapsWrap').addClass('closed');
+		}
+
 		// Photo with icon over it
 		$('.btTextCenter').each(function(){
 			if($(this).next().is('.btIconsHalfHoverPosition, .btIconsFullHoverPosition')){

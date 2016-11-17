@@ -5117,6 +5117,7 @@ a.btContinueReading:hover {
     }
 .btIco.btIcoDefaultType .btIcoHolder {
     border-radius: 0;
+    line-height: initial;
     }
 .btIcoDefaultType .btIcoHolder:after {
     display: inline-block;
@@ -5168,6 +5169,7 @@ a.btContinueReading:hover {
 .btIco.btIcoMediumSize.btIcoDefaultType .btIcoHolder:after {
     font-size: 41px;
     line-height: 41px;
+    cursor: pointer;
     }
 .btIco.btIcoBigSize .btIcoHolder:before,
 .btIco.btIcoBigSize .btIcoHolder:after {
@@ -5278,6 +5280,7 @@ a.btContinueReading:hover {
     }
 .btCells-2 .btIconImageCell {
     max-width: 50%;
+    float: left;
     }
 .btCells-3 .btIconImageCell {
     max-width: 33.33333%;
@@ -6808,6 +6811,10 @@ html.touch .btShowTitle {
     font-size: 25px;
     margin: 0 0 11px;
     }
+.header.medium h3{
+    font-size: 22px; 
+}
+
 .header.medium .btSuperTitle,
 .header.medium .btSubTitle {
     font-size: 16px;
@@ -8837,7 +8844,7 @@ div[id^="map_canvas"] {
     transition: all 300ms ease;
     }
 .btGoogleMapsWrap {
-    background-color: #f36438;
+    background-color: #00aae5;
     color: #fff;
     }
 span.btInfoPaneToggler {
@@ -8864,6 +8871,10 @@ span.btInfoPaneToggler:before {
 .btGoogleMapsWrap.closed span.btInfoPaneToggler:before {
     content: '\e684';
     }
+
+.btIconImageRow{
+    cursor: pointer;
+}
 
 /* Grid item icons */
 /* Hover position icons */
@@ -18240,5 +18251,14 @@ img.btAltLogo {
 .grey h1{
     color: #666 !important;
 }
+
+.btIcoHolder:after{
+    min-width: 42px;
+}
+
+.btIconWidgetIcon .btIcoHolder:after{
+    min-width: 0px;
+}
+
 
 /*# sourceMappingURL=style.crush.css.map */
