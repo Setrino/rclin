@@ -1003,6 +1003,7 @@ input {
     -moz-transition: all 1s cubic-bezier(.190,1,.220,1) 200ms;
     transition: all 1s cubic-bezier(.190,1,.220,1) 200ms;
     }
+#slider_block .btHalfPage .rowItem:nth-child(2)
 body:not(.btHalfPage) .rowItem:nth-child(0) {
     -webkit-transition-delay: 0ms;
     -moz-transition-delay: 0ms;
@@ -3081,11 +3082,15 @@ html[data-useragent*='MSIE 10.0'] body.btMenuHorizontal .menuPort ul > li:hover 
 .fooWidgets .btSearch {
     display: none;
     }
-.btFooterMenu ul.menu,
-.btFooterMenu .fooWidgets {
+.btFooterMenu ul.menu {
     display: block;
     float: right;
     }
+
+.btFooterMenu .fooWidgets{
+    display: none;
+}
+
 .btFooterMenu ul.menu li:first-child {
     margin-left: 0;
     }
@@ -17811,6 +17816,7 @@ div[id^="map_canvas"] {
 .wInfoPane div[id^="map_canvas"] {
     height: 100% !important;
     }
+
 }
 
 @media (max-width: 400px) {
@@ -18260,5 +18266,8 @@ img.btAltLogo {
     min-width: 0px;
 }
 
+.width-80{
+    width: 80%;
+}
 
 /*# sourceMappingURL=style.crush.css.map */
