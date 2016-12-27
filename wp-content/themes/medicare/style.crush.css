@@ -3087,10 +3087,6 @@ html[data-useragent*='MSIE 10.0'] body.btMenuHorizontal .menuPort ul > li:hover 
     float: right;
     }
 
-.btFooterMenu .fooWidgets{
-    display: none;
-}
-
 .btFooterMenu ul.menu li:first-child {
     margin-left: 0;
     }
