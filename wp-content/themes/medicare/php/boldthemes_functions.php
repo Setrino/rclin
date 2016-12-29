@@ -265,10 +265,10 @@ if ( ! function_exists( 'boldthemes_get_heading_html' ) ) {
 
 		$ico_tag = 'a ';
 		if ( $link == '' ) {
-			$ico_tag = 'span ';
+			$ico_tag = 'span data-ico-' . esc_attr( $icon_set ) . '="&#x' . esc_attr( $icon ) . ';" class="btIcoHolder"><em></em>';
 			$ico_tag_end = 'span';	
 		} else {
-			$ico_tag = 'a href="' . esc_url_raw( $link ) . '" ' . ( $target );
+			$ico_tag = 'a href="' . esc_url_raw( $link ) . '" ' . ( $target ) . '><em data-ico-' . esc_attr( $icon_set ) . '="&#x' . esc_attr( $icon ) . ';" class="btIcoHolder"></em>';
 			$ico_tag_end = 'a';
 		}
 
@@ -277,7 +277,7 @@ if ( ! function_exists( 'boldthemes_get_heading_html' ) ) {
 			$style_attr = ' ' . 'style="' . $el_style . '"';
 		}
 
-		return '<span class="btIco ' . esc_attr( $el_class ) . '" ' . $style_attr . '><' . $ico_tag . ' data-ico-' . esc_attr( $icon_set ) . '="&#x' . esc_attr( $icon ) . ';" class="btIcoHolder"><em></em></' . $ico_tag_end . '>' . $text . '</span>';
+		return '<span class="btIco ' . esc_attr( $el_class ) . '" ' . $style_attr . '><' . $ico_tag . $text . '</' . $ico_tag_end . '></span>';
 	}
 }
 

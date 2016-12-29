@@ -135,7 +135,7 @@ a {
     }
 a:hover {
     text-decoration: none;
-    color: #00AAE5 !important;
+    color: #00AAE5;
     }
 a img {
     border: none;
@@ -1188,8 +1188,11 @@ a {
 .btLightSkin .btDarkSkin a {
     color: #fff;
     }
+.btText a{
+    color: #00AAE5;
+}
 a:hover {
-    color: #0cb8b6;
+    color: #00AAE5;
     }
 
 /* Base formating */
@@ -1404,7 +1407,7 @@ a:hover {
     }
 .topTools .btIconWidgetIcon:hover .btIco .btIcoHolder em,
 .btIconWidget .btIconWidgetIcon:hover .btIco .btIcoHolder em {
-    color: #0cb8b6 !important;
+    color: #0cb8b6;
     }
 .btDarkSkin.btBelowMenu:not(.btStickyHeaderActive) .menuHolder .menuPort ul li a,
 .btLightSkin .btDarkSkin.btBelowMenu:not(.btStickyHeaderActive) .menuHolder .menuPort ul li a,
@@ -2229,10 +2232,10 @@ body.btMenuHorizontal.btBelowMenu .mainHeader {
     box-shadow: none;
     }
 body.btMenuHorizontal.btStickyHeaderActive.btDarkSkin .mainHeader {
-    background-color: rgba(29,31,39,.9);
+    background-color: rgba(29,31,39,1.0);
     }
 body.btMenuHorizontal.btStickyHeaderActive.btLightSkin .mainHeader {
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,1.0);
     }
 body.btMenuHorizontal.btStickyHeaderActive.btStickyHeaderOpen .mainHeader {
     -webkit-transition: transform .5s cubic-bezier(.230,1,.320,1);
@@ -2871,9 +2874,6 @@ html[data-useragent*='MSIE 10.0'] body.btMenuHorizontal .menuPort ul > li:hover 
 .btIconWidgetTitle {
     font-size: 14px;
     margin: 0 0 3px;
-    }
-.btIconWidgetText {
-    color: rgba(68,68,68,.4);
     }
 .btDarkSkin .btIconWidgetText,
 .btLightSkin .btDarkSkin .btIconWidgetText {
@@ -4469,6 +4469,7 @@ a.btContinueReading:hover {
     float: left;
     position: relative;
     overflow: hidden;
+    font-style: normal;
     border-radius: 50%;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -4487,14 +4488,8 @@ a.btContinueReading:hover {
     float: left;
     text-align: center;
     vertical-align: middle;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
     font-weight: 400;
-    -webkit-transform: rotate3d(0,0,1,50deg);
-    -moz-transform: rotate3d(0,0,1,50deg);
-    -ms-transform: rotate3d(0,0,1,50deg);
-    transform: rotate3d(0,0,1,50deg);
+    font-style: normal;
     }
 .btIco .btIcoHolder:before,
 .btIco .btIcoHolder:after {
@@ -4853,6 +4848,12 @@ a.btContinueReading:hover {
 .btIco.btIcoSmallSize .btIcoText {
     font-size: 14px;
     }
+.btGoogleMapsWrap .btIco a .btIcoText{
+    color: #FFFFFF;
+}
+.btIco a:hover .btIcoText{
+    text-decoration: underline;
+}
 .btIco.btIcoMediumSize {
     line-height: 42px;
     }
@@ -8882,7 +8883,7 @@ span.btInfoPaneToggler:before {
 .btIconImageRow.btIconsHalfHoverPosition,
 .btIconImageRow.btIconsFullHoverPosition {
     overflow: visible;
-    display: block;
+    display: none;
     margin: 0 auto;
     position: relative;
     z-index: 10;

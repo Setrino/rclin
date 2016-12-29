@@ -1209,7 +1209,7 @@ class bt_service {
 			$output .= '</div>';
 			if ( $headline != '' || $text != '') {
 				$output .= '<div class="sTxt">';
-					$output .= boldthemes_get_heading_html( '', $headline, '', 'small', $dash, '', '' ) . '<p>' . $text . '</p>';
+				$output .= boldthemes_get_heading_html( '', $headline, '', 'small', $dash, '', '' ) . '<p>' . $text . '</p>'; 
 				$output .= '</div>';
 			}
 
