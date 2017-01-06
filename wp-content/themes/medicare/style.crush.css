@@ -18267,4 +18267,12 @@ img.btAltLogo {
     width: 80%;
 }
 
+.wpml-ls-current-language .wpml-ls-native{
+    color: #00aae5;
+}
+
+.wpml-ls-native:hover {
+    color: #00aae5;
+}
+
 /*# sourceMappingURL=style.crush.css.map */
